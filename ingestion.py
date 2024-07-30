@@ -55,4 +55,4 @@ load_dotenv()
 
 if __name__ == "__main__":
     print("Hello")
-    ingest_git_wiki_repo("https://danubiusinfo.hu/gitlab/raiffeisen/raiffeisen-team-wiki.wiki.git")
+    ingest_git_wiki_repo("")
