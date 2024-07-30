@@ -18,7 +18,7 @@ def qa(query: str, chat_history: List[Dict[str, Any]] = []):
     print("Retrieving...")
     vectorstore = Qdrant.from_existing_collection(
         embedding=embeddings,
-        collection_name="wiki",
+        collection_name="vpos",
         url="http://localhost:6333",
         api_key="qdrant"
     )
@@ -46,5 +46,5 @@ def qa(query: str, chat_history: List[Dict[str, Any]] = []):
 load_dotenv()
 
 if __name__ == "__main__":
-    res = qa("What is the Merlin PaaS?")
-    print(res["answer"])
+    res = qa("")
+    print(res)
